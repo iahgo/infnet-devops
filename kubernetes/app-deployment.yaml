@@ -17,13 +17,13 @@ spec:
         image: iahgo/infnet:latest
         ports:
         - containerPort: 5000
-        readinessProbe:
+        readinessProbe:         # <--- Readiness Probe
           httpGet:
             path: /
             port: 5000
           initialDelaySeconds: 5
           periodSeconds: 10
-        livenessProbe:
+        livenessProbe:          # <--- Liveness Probe
           httpGet:
             path: /
             port: 5000

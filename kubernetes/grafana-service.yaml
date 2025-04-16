@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: grafana-service
 spec:
-  type: NodePort
+  type: NodePort # será criado NodePort. Exposto externamente.
   selector:
     app: grafana
   ports:

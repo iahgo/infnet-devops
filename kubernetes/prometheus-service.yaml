@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: prometheus-service
 spec:
-  type: ClusterIP
+  type: ClusterIP # será criado ClusterIP, não exposto externamente.
   selector:
     app: prometheus
   ports:

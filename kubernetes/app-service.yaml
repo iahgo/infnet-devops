@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: app-service
 spec:
-  type: NodePort
+  type: NodePort # será criado NodePort 
   selector:
     app: myapp
   ports:
-  - port: 5000
+  - port: 5000 # porta que será exposta no serviço
     targetPort: 5000
-    nodePort: 30001
+    nodePort: 30001 # porta que será exposta no nó do cluster

@@ -42,7 +42,7 @@ spec:
       volumes:
       - name: prometheus-storage
         persistentVolumeClaim:
-          claimName: prometheus-pvc
+          claimName: prometheus-pvc    # <--- PVC para persistência dos dados
       - name: prometheus-config-volume
         configMap:
           name: prometheus-config
