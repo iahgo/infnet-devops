@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Olá, DevOps! Minha aplicação Flask (infnet) está rodando no Kubernetes. Executando Pipeline..."
+    return "Olá, DevOps! Minha aplicação Flask (infnet) está rodando no Kubernetes. Executando Pipeline2..."
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
